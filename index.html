@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>Scheduler</title>
+<link rel="stylesheet" href="style.css"></link>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<div class="floating-container">
+  <div id="btn_add" class="floating-button">+</div>
+</div>
+
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h3 style="padding-left:40px;">Editor</h3>
+
+    <div class="w3-container" style="width=100%;overflow:hidden;">
+      <div class="w3-container" style="float:left;width:50%;height:50%;padding:20px;">
+        <h5>Select Week</h5>
+        <input type="radio" id="day1" name="week" value="1">
+        <label>Monday</label><br>
+        <input type="radio" id="day2" name="week" value="2">
+        <label>Tuesday</label><br>
+        <input type="radio" id="day3" name="week" value="3">
+        <label>Wednesday</label><br>
+        <input type="radio" id="day4" name="week" value="4">
+        <label>Thursday</label><br>
+        <input type="radio" id="day5" name="week" value="5">
+        <label>Friday</label><br>
+        <input type="radio" id="day6" name="week" value="6">
+        <label>Saturday</label><br>
+        <input type="radio" id="day7" name="week" value="7">
+        <label>Sunday</label><br><br>
+
+
+        <div class="w3-container" style="overflow:hidden;width:100%;padding:20px;">
+        <input type="text" id="startT" style="width:45%;float:left;" placeholder="Start Time">
+        <input type="text" id="endT" style="width:45%;float:right;" placeholder="End Time">
+        </div>
+
+
+
+
+        <br>
+      </div>
+      <div class="w3-container" style="float:right;width:50%;height:50%;padding:20px;"><br>
+        <center><input type="text" id="title" style="width:95%;" placeholder="Title"></center> <br>
+
+
+
+        <h5>Label</h5>
+        <center><input type="color" id="colorpicker" value="#0000ff" style="width:95%;"></center> <br>
+
+
+        <center><button id="add"> Add </button></center>
+        <center>
+        <div class="w3-container" style="overflow:hidden;width:60%;padding:20px;">
+        <button id="update" style="display:none;float:left;"> Update </button>
+        <button id="delete" style="display:none;float:right;"> Delete </button>
+        </div>
+        </center>
+      </div>
+
+    </div>
+
+
+  </div>
+</div>
+
+<div>
+
+<div class="w3-container week" id="a1">
+
+  <h3 style="float:right;padding-top:5px;padding-right:40px;height:100%;">Monday</h3>
+
+</div>
+
+<div class="w3-container week" id="a2">
+  <h3 style="float:right;padding-top:5px;padding-right:40px;height:100%;">Tuesday</h3>
+
+</div>
+
+<div class="w3-container week" id="a3">
+  <h3 style="float:right;padding-top:5px;padding-right:40px;height:100%;">Wednesday</h3>
+
+</div>
+
+<div class="w3-container week" id="a4">
+  <h3 style="float:right;padding-top:5px;padding-right:40px;height:100%;">Thursday</h3>
+
+</div>
+
+<div class="w3-container week" id="a5">
+  <h3 style="float:right;padding-top:5px;padding-right:40px;height:100%;">Friday</h3>
+
+</div>
+
+<div class="w3-container week" id="a6">
+  <h3 style="float:right;padding-top:5px;padding-right:40px;height:100%;">Saturday</h3>
+
+</div>
+
+<div class="w3-container week" id="a7">
+  <h3 style="float:right;padding-top:5px;padding-right:40px;height:100%;">Sunday</h3>
+
+</div>
+
+</div>
+
+<script src="index.js"></script>
+
+</html>
